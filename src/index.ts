@@ -76,7 +76,7 @@ const extension: JupyterFrontEndPlugin<void> = {
 
   // Add the command to the palette.
   palette.addItem({command, category: 'Tutorial'});
- }
+  }
 };
 
 export default extension;
