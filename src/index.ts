@@ -10,6 +10,7 @@ import {
   Widget
 } from '@lumino/widgets';
 
+
 interface APODResponse {
   copyright: string;
   date: string;
@@ -31,6 +32,7 @@ const extension: JupyterFrontEndPlugin<void> = {
 
   // Create a blank content widget inside of a MainAreaWidget
   const content = new Widget();
+  content.addClass('my-apodWidget'); // new line
   const widget = new MainAreaWidget({content});
   widget.id = 'apod-jupyterlab';
   widget.title.label = 'Astronomy Picture';
